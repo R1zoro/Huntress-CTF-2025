@@ -116,7 +116,8 @@ Well done! That was Base 64, super common for encoding data in email and web tra
 Nice work! That was Base 85, which comes in different variants. The Adobe/Ascii85 variant usually starts with <~ and ends with ~>. The RFC 1924 variant uses a broader alphabet (you may see characters like ~, `, {, or }). If your decoder complains about invalid symbols, switch the Base85 variant. Flag: flag{a414ae096381d9594c58e785b3c95dfb}
 ```
 
-9.load into cyberchef and decode from base92 we get:
+9.From the hints we can understand we might need to remove whitespaces, so we use a remove whitespace block before  
+ from base92 block then we get:
 
 ```
 Very nice! That was Base 92. Many decoders do not ignore whitespace, so you may need to remove line breaks before decoding. Tip: Base92 uses a wide printable set but excludes spaces and newlines; strip them before decoding. Here is another flag: flag{0c97042d855d7b353dc87c91ea902129}
