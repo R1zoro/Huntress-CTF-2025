@@ -6,13 +6,14 @@ Just A little Bit
 > *“If just a little bit were to go missing… would it really even matter?”*
 
 We are given several lines of binary:
-
+```
 10011011011001100001110011111110110110010110001
 10110011011001111000110110001011011001110011100
 00111001011100010110010011001100110010110010111
 00101011001101100011100101011001101110000111001
 01101011100100011010101110010110110011011011001
-000111001011001111001101111101
+000111001011001111001101111101 
+```
 
 
 At first glance, this looks like standard 8-bit ASCII binary. Decoding it as 8-bit bytes, however, produces unreadable output. The hint — *“If just a little bit were to go missing…”* — suggests that a **single bit is missing**, causing the byte boundaries to shift. Since ASCII only truly requires **7 bits**, interpreting the data as 7-bit ASCII may realign the stream correctly.
